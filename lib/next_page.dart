@@ -26,7 +26,6 @@ class _AddPageState extends State<AddPage> {
       body: Column(
         children: [
           TextField(onChanged: (value) {
-            print(value);
             newWord = value;
           }),
           ElevatedButton(
@@ -35,7 +34,7 @@ class _AddPageState extends State<AddPage> {
               _addFirebaseData();
               Navigator.pop(context);
             },
-            child: Text("追加"),
+            child: const Text("追加"),
           ),
         ],
       ),

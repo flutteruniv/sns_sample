@@ -110,25 +110,25 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       child: Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.person,
                             size: 48,
                           ),
                           Text(
                             post.text,
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontSize: 24,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          Spacer(),
+                          const Spacer(),
                           IconButton(
                             onPressed: () async {
                               // 削除
                               await _delete(post.id);
                               await _fetchFirebaseData();
                             },
-                            icon: Icon(Icons.delete),
+                            icon: const Icon(Icons.delete),
                           ),
                         ],
                       ),
